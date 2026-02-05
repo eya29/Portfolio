@@ -11,9 +11,10 @@ export const Experience: React.FC = () => {
       period: "Feb 2025 - May 2025",
       location: "Sousse, Tunisia",
       description: "Designed an AI pipeline for automated image editing, including background removal, object removal, and recolorization with metadata preservation.",
-      technologies: ["TensorFlow", "OpenCV", "Python", "Computer Vision", "Image Processing"],
+      technologies: ["Python", "ISNet", "SAM", "LAMA", "Computer Vision", "Image Processing"],
       highlights: [
-        "Designed AI pipeline for automated image editing with background/object removal",
+        "Designed AI pipeline for automated image editing with background, object removal & Recoloring",
+        "Integration of advanced models (SAM, LaMa, ISNet) with PyTorch",
         "Preserved metadata and maintained original image format for output integrity",
         "Processed multiple image formats (PNG, JPEG, AVIF) with RGB normalization"
       ]
@@ -24,7 +25,7 @@ export const Experience: React.FC = () => {
       period: "July 2024 - Aug 2024",
       location: "Monastir, Tunisia",
       description: "Developed an AI-based employee tracking system using facial recognition with TensorFlow and PyTorch.",
-      technologies: ["TensorFlow", "PyTorch", "Facial Recognition", "Angular", "TTS"],
+      technologies: ["Python", "PyTorch", "Facial Recognition", "TensorFlow","Angular", "TTS"],
       highlights: [
         "Developed AI-based employee tracking system using facial recognition",
         "Integrated text-to-speech (TTS) for interactive voice greetings",
@@ -32,16 +33,15 @@ export const Experience: React.FC = () => {
       ]
     },
     {
-      company: "REGALS.INC",
+      company: "Nextya",
       position: "Summer Intern",
       period: "June 2023 - July 2023",
       location: "Sousse, Tunisia",
-      description: "Developed front-end mobile interfaces using Flutter, based on Figma designs for a football club's mobile application.",
-      technologies: ["Flutter", "Dart", "Figma", "Mobile Development", "UI/UX"],
+      description: "Development of a book delivery web application with the MERN stack integrating a recommendation system based on TF-IDF.",
+      technologies: ["MERN", "Python", "scikit-learn", "Postman"],
       highlights: [
-        "Developed front-end mobile interfaces using Flutter based on Figma designs",
-        "Collaborated with team to implement improvements to football club mobile app",
-        "Delivered pixel-perfect UI implementations from design mockups"
+        "Developed a full-stack book delivery web application using the MERN stack (MongoDB, Express, React, Node.js).",
+        "Implemented a TF-IDF–based recommendation system to suggest relevant books according to user interests and content similarity."
       ]
     },
     {
@@ -50,11 +50,10 @@ export const Experience: React.FC = () => {
       period: "Feb 2022 - June 2022",
       location: "Sousse, Tunisia",
       description: "Created an intelligent solution to effectively manage vacant spots within a large parking facility using camera technology.",
-      technologies: ["Computer Vision", "Mobile Development", "IoT", "Real-time Systems"],
+      technologies: ["Computer Vision", "Flutter","OpenCV", "YOLOv8","Pickle","UML", "Real-time Systems"],
       highlights: [
-        "Created intelligent parking management system for large facilities",
-        "Utilized camera technology for real-time parking space monitoring",
-        "Connected system to mobile application for spot reservation"
+        "Designed and integrated a smart parking reservation system connected to a mobile application, enabling users to reserve parking spots in real time.",
+        "Implemented computer vision–based parking spot detection from live video streams using YOLOv8 and OpenCV, with real-time availability updates synchronized via Flask and Firebase."
       ]
     }
   ];

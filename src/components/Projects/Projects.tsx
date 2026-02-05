@@ -10,22 +10,89 @@ export const Projects: React.FC = () => {
 
   const projects = [
      {
+      title: "AI Automation",
+      subtitle: "Workflow Automation, Generative AI & SEO Optimization",
+      description: "End-to-end AI automation system built with n8n to streamline content creation, SEO analysis, and multi-platform publishing through intelligent workflow orchestration.",
+      // longDescription: "A comprehensive computer vision solution that revolutionizes image processing workflows. The pipeline combines multiple deep learning models for semantic segmentation, object detection, and style transfer, while maintaining image quality and metadata integrity throughout the processing chain.",
+      technologies: ["n8n", "Generative AI", "Prompt Engineering", "SEO Automation", "RSS", "Automation"],
+      category: "Gen-IA & Automation ",
+      icon: Image,
+      gradient: "from-green-500 via-emerald-600 to-teal-600",
+      bgPattern: "bg-green-50 dark:bg-green-900/20",
+      features: [
+        "🔄 Automated blog post generation from RSS feeds using Generative AI",
+        "🧠 Prompt-engineered workflows for high-quality content creation",
+        "📊 Automated SEO audits (on-page & site structure analysis)",
+        "📧 SEO optimization reports generated and sent via email",
+        "🌐 Multi-platform content publishing through API orchestration"
+      ], 
+       metrics: {
+    // accuracy: "86%",
+    // responseTime: "<150ms",
+    // assessments: "10K+"
+  },
+      status: "Completed",
+      year: "2025"
+    },
+    {
+      title: "RAG Project – Intelligent Document-Based Chatbot",
+      subtitle: "Retrieval-Augmented Generation & Contextual Question Answering",
+      description: "An intelligent document-based chatbot using Retrieval-Augmented Generation (RAG) to provide accurate, source-grounded answers from multiple documents.",
+      // longDescription: "A comprehensive computer vision solution that revolutionizes image processing workflows. The pipeline combines multiple deep learning models for semantic segmentation, object detection, and style transfer, while maintaining image quality and metadata integrity throughout the processing chain.",
+      technologies: ["Python", "RAG", "LLMs", "Embeddings", "LangChain", "ChromaDB", "Streamlit"],
+      category: "Gen-IA & NLP ",
+      icon: Image,
+      gradient: "from-green-500 via-emerald-600 to-teal-600",
+      bgPattern: "bg-green-50 dark:bg-green-900/20",
+      features: [
+        "📚 Multi-document ingestion and indexing using vector embeddings",
+        "🔍 Semantic document retrieval with ChromaDB",
+        "🤖 Context-aware answer generation via RAG architecture",
+        "🖥️ Interactive Streamlit interface for real-time Q&A",
+        "🧠 Reduced hallucinations through document-grounded responses"
+      ],
+      metrics: {
+        // accuracy: "86%",
+        // responseTime: "<150ms",
+        // assessments: "10K+"
+      },
+      status: "Completed",
+      year: "2025"
+    },
+     {
+      title: "AI Vision Pipeline",
+      subtitle: "Computer Vision & Automated Enhancement",
+      description: "Cutting-edge computer vision pipeline for automated image processing, featuring intelligent background removal, object detection, and AI-powered image enhancement capabilities.",
+      longDescription: "A comprehensive computer vision solution that revolutionizes image processing workflows. The pipeline combines multiple deep learning models for semantic segmentation, object detection, and style transfer, while maintaining image quality and metadata integrity throughout the processing chain.",
+      technologies: ["TensorFlow", "OpenCV", "SAM", "U-Net", "Python", "FastAPI", "Docker", "LaMA"],
+      category: "computer-vision",
+      icon: Image,
+      gradient: "from-green-500 via-emerald-600 to-teal-600",
+      bgPattern: "bg-green-50 dark:bg-green-900/20",
+      features: [
+        "🎨 Automated background and object removal with pixel-perfect precision",
+        "🌈 AI-powered image recolorization using style transfer techniques",
+        "📁 Metadata preservation and format integrity across all operations",
+        "⚡ Multi-format support (PNG, JPEG, AVIF) with optimized RGB processing",
+        "☁️ Cloud-native architecture with scalable processing capabilities"
+      ],
+      metrics: {
+        SSIM: "0.88",
+        PSNR: "37dB",
+        LPIPS: "0.05",
+        DeltaE: "1.2",
+        formats: "10+",
+        processTime: "<5s"
+      },
+      status: "Completed",
+      year: "2025"
+    },
+     {
         title: "Skin Cancer Detection",
         subtitle: "Deep Learning & RAG-Based Medical Assistant",
         description: "End-to-end AI system combining EfficientNet-based image classification and a RAG-powered chatbot to support early skin cancer detection and provide reliable, document-grounded medical information.",
         longDescription: "Skin Cancer Detection is a comprehensive medical AI project that integrates computer vision and generative AI to assist users in understanding and identifying potential skin cancer risks. The system uses a pretrained EfficientNet architecture fine-tuned on dermoscopic image datasets to classify skin lesions, while a Retrieval-Augmented Generation (RAG) chatbot answers user questions using trusted skin cancer medical documents. ",
-        technologies: [
-          "Python",
-          "PyTorch",
-          "EfficientNet",
-          "Computer Vision",
-          "Deep Learning",
-          "RAG",
-          "LangChain",
-          "ChromaDB",
-          "Flask",
-          "Medical Imaging"
-        ],
+        technologies: ["Python","PyTorch","EfficientNet","Computer Vision","Deep Learning","RAG", "LangChain",  "ChromaDB", "Flask", "Medical Imaging" ],
         category: "ai-ml",
         icon: Brain,
         gradient: "from-emerald-500 via-teal-600 to-cyan-600",
@@ -35,23 +102,19 @@ export const Projects: React.FC = () => {
           "🖼️ Automated analysis of dermoscopic images (benign vs malignant)",
           "💬 RAG-based medical chatbot answering skin cancer questions using trusted documents",
           "📚 Vector database (ChromaDB) for document retrieval and grounded responses",
-          "📊 CRISP-DM methodology applied across data preparation, modeling, and evaluation",
-          "⚡ Real-time predictions and chatbot responses via Flask API",
-          "🩺 Designed as an ethical clinical decision-support tool (no medical diagnosis)"
+          "⚡ Real-time predictions and chatbot responses via Flask API"
         ],
         metrics: {
-          accuracy: "93%",
+          accuracy: "90%",
           processTime: "<200ms",
           dataPoints: "25K+ images"
         },
-        status: "Completed",
+        status: "In Progress",
         year: "2025"
-
-
     },
     {
       title: "StressWatch",
-      subtitle: "NLP & Deep Learning for Mental Health",
+      subtitle: " Automatic Stress Detection in Online Posts",
       description: "Advanced AI system leveraging transformer models to analyze social media content and detect psychological stress patterns with high accuracy and real-time processing capabilities.",
       longDescription: "StressWatch represents a breakthrough in mental health technology, combining state-of-the-art NLP with deep learning to create a comprehensive stress detection system. The project utilizes the RoBERTa transformer architecture for nuanced understanding of textual content, while implementing advanced preprocessing techniques with spaCy for optimal performance.",
       technologies: ["Python", "PyTorch", "BERT", "NLP", "spaCy", "Next.js", "CRISP-DM", "Transformers"],
@@ -61,7 +124,7 @@ export const Projects: React.FC = () => {
       bgPattern: "bg-purple-50 dark:bg-purple-900/20",
       features: [
         "🧠 Enhanced AI system for social media stress detection with 85% accuracy",
-        "🤖 Implemented RoBERTa transformer model for advanced NLP analysis",
+        "🤖 Implemented NLP preprocessing pipelines using spaCy (tokenization, lemmatization, noise removal).",
         "📊 Applied CRISP-DM methodology for structured ML development lifecycle",
         "⚡ Real-time processing with optimized inference pipeline",
         "🎯 Built responsive Next.js interface for seamless user interaction"
@@ -75,21 +138,48 @@ export const Projects: React.FC = () => {
       year: "2025"
     },
     {
+  title: "Depression Detection Platform",
+  subtitle: "NLP, Deep Learning & Mental Health Decision Support",
+  description: "End-to-end AI-powered platform for early depression detection, combining NLP-based text analysis and the PHQ-9 clinical questionnaire to assess mental health risk and provide personalized recommendations.",
+  longDescription: "Depression Detection Platform is an intelligent mental health system designed to support early identification of depressive symptoms. The platform allows users to enter free-text describing their emotional state, which is analyzed using a fine-tuned NLP deep learning model to detect depression indicators. In parallel, users complete the PHQ-9 (Patient Health Questionnaire), a clinically validated 9-question assessment. Based on the combined results, the system classifies depression severity and provides personalized recommendations, such as consulting a mental health professional or practicing targeted well-being exercises.",
+  technologies: [
+    "Python", "PyTorch","NLP", "Deep Learning","Transformers", "spaCy", "Flask", "PHQ-9" ],
+  category: "ai-ml",
+  icon: Brain,
+  gradient: "from-indigo-500 via-purple-600 to-pink-600",
+  bgPattern: "bg-indigo-50 dark:bg-indigo-900/20",
+  features: [
+    "🧠 NLP-based deep learning model for depression detection from user-written text",
+    "📝 Interactive text input page for real-time mental health analysis",
+    "📊 Integrated PHQ-9 questionnaire with automatic scoring and severity classification",
+    "🎯 Personalized recommendations based on depression level (exercises, self-care, or professional consultation)",
+    "⚡ Real-time inference and decision logic served via Flask API"
+  ],
+  metrics: {
+    accuracy: "86%",
+    responseTime: "<150ms",
+    assessments: "10K+"
+  },
+  status: "Completed",
+  year: "2025"
+},
+
+    {
       title: "COVID-19 Analytics Platform",
       subtitle: "Big Data & Predictive Intelligence",
       description: "Comprehensive data analytics platform featuring interactive dashboards and machine learning models for COVID-19 trend analysis and case prediction across multiple countries.",
       longDescription: "A sophisticated big data platform that transforms raw COVID-19 data into actionable insights through advanced analytics and machine learning. The system processes massive datasets using Apache Spark and provides real-time visualizations with predictive capabilities for informed decision-making.",
-      technologies: ["MongoDB", "Apache Spark", "SparkSQL", "Spark ML", "Python", "D3.js", "DaaS", "MLflow"],
+      technologies: ["MongoDB", "Apache Spark","Databricks", "Python", "MongoDB(Cloud Atlas)", "Plotly", "Matplotlib"],
       category: "data-science",
       icon: BarChart3,
       gradient: "from-blue-500 via-blue-600 to-cyan-600",
       bgPattern: "bg-blue-50 dark:bg-blue-900/20",
       features: [
         "📈 Interactive dashboard for multi-dimensional COVID-19 data exploration",
-        "🔮 Predictive modeling using Spark ML with 89% forecast accuracy",
-        "🏗️ Scalable Data-as-a-Service (DaaS) architecture implementation",
+        "🔮 Collected, processed, and analyzed COVID-19 datasets covering 219 countries using Apache Spark on Databricks for large-scale data processing.",
+        "🏗️ Built a linear regression model to predict the number of new COVID-19 cases based on historical time-series data.",
         "📊 Advanced data visualization with real-time updates",
-        "🌍 Multi-country analysis with customizable time ranges"
+        "🌍 Stored and managed large volumes of structured data in MongoDB Atlas (cloud) for scalable access and querying."
       ],
       metrics: {
         countries: "195+",
@@ -99,31 +189,7 @@ export const Projects: React.FC = () => {
       status: "Completed",
       year: "2024"
     },
-    {
-      title: "AI Vision Pipeline",
-      subtitle: "Computer Vision & Automated Enhancement",
-      description: "Cutting-edge computer vision pipeline for automated image processing, featuring intelligent background removal, object detection, and AI-powered image enhancement capabilities.",
-      longDescription: "A comprehensive computer vision solution that revolutionizes image processing workflows. The pipeline combines multiple deep learning models for semantic segmentation, object detection, and style transfer, while maintaining image quality and metadata integrity throughout the processing chain.",
-      technologies: ["TensorFlow", "OpenCV", "YOLO", "U-Net", "Python", "FastAPI", "Docker", "AWS S3"],
-      category: "computer-vision",
-      icon: Image,
-      gradient: "from-green-500 via-emerald-600 to-teal-600",
-      bgPattern: "bg-green-50 dark:bg-green-900/20",
-      features: [
-        "🎨 Automated background and object removal with pixel-perfect precision",
-        "🌈 AI-powered image recolorization using style transfer techniques",
-        "📁 Metadata preservation and format integrity across all operations",
-        "⚡ Multi-format support (PNG, JPEG, AVIF) with optimized RGB processing",
-        "☁️ Cloud-native architecture with scalable processing capabilities"
-      ],
-      metrics: {
-        accuracy: "96%",
-        formats: "10+",
-        processTime: "<2s"
-      },
-      status: "Completed",
-      year: "2025"
-    }
+   
   ];
 
   const categories = [
